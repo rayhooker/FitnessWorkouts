@@ -7,7 +7,45 @@
 		<key>FitnessWorkouts Watch App.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>FitnessWorkouts.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>WeeklyMilesWidgetExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>BD028DF430B206210070BA8C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BD028E0130B206240070BA8C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BD028E0B30B206240070BA8C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C0FFEE000000000000000001</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C0FFEE000000000000000010</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

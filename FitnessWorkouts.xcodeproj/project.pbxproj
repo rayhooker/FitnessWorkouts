@@ -6,6 +6,11 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C0FFEE000000000000000003 /* WeeklyMilesWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C0FFEE000000000000000002 /* WeeklyMilesWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C0FFEE000000000000000012 /* FitnessWorkouts Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BD028DF530B206210070BA8C /* FitnessWorkouts Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		BD028E0330B206240070BA8C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +26,60 @@
 			remoteGlobalIDString = BD028DF430B206210070BA8C;
 			remoteInfo = "FitnessWorkouts Watch App";
 		};
+		C0FFEE000000000000000005 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD028DED30B206210070BA8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0FFEE000000000000000001;
+			remoteInfo = WeeklyMilesWidgetExtension;
+		};
+		C0FFEE000000000000000014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD028DED30B206210070BA8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD028DF430B206210070BA8C;
+			remoteInfo = "FitnessWorkouts Watch App";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C0FFEE000000000000000004 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				C0FFEE000000000000000003 /* WeeklyMilesWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+		C0FFEE000000000000000013 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolder = Product;
+			files = (
+				C0FFEE000000000000000012 /* FitnessWorkouts Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BD028DF530B206210070BA8C /* FitnessWorkouts Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FitnessWorkouts Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD028E0230B206240070BA8C /* FitnessWorkouts Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FitnessWorkouts Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD028E0C30B206240070BA8C /* FitnessWorkouts Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FitnessWorkouts Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0FFEE000000000000000002 /* WeeklyMilesWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WeeklyMilesWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0FFEE000000000000000011 /* FitnessWorkouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessWorkouts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C0FFEE000000000000000009 /* Exceptions for "WeeklyMilesWidget" folder in "WeeklyMilesWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C0FFEE000000000000000001 /* WeeklyMilesWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BD028DF730B206210070BA8C /* FitnessWorkouts Watch App */ = {
@@ -43,6 +95,24 @@
 		BD028E0F30B206240070BA8C /* FitnessWorkouts Watch AppUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "FitnessWorkouts Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		C0FFEE000000000000000007 /* WeeklyMilesWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C0FFEE000000000000000009 /* Exceptions for "WeeklyMilesWidget" folder in "WeeklyMilesWidgetExtension" target */,
+			);
+			path = WeeklyMilesWidget;
+			sourceTree = "<group>";
+		};
+		C0FFEE000000000000000008 /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C0FFEE000000000000000020 /* FitnessWorkouts iOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "FitnessWorkouts iOS";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -63,13 +133,26 @@
 			files = (
 			);
 		};
+		C0FFEE00000000000000000B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		C0FFEE000000000000000022 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		BD028DEC30B206210070BA8C = {
 			isa = PBXGroup;
 			children = (
+				C0FFEE000000000000000020 /* FitnessWorkouts iOS */,
 				BD028DF730B206210070BA8C /* FitnessWorkouts Watch App */,
+				C0FFEE000000000000000008 /* Shared */,
+				C0FFEE000000000000000007 /* WeeklyMilesWidget */,
 				BD028E0530B206240070BA8C /* FitnessWorkouts Watch AppTests */,
 				BD028E0F30B206240070BA8C /* FitnessWorkouts Watch AppUITests */,
 				BD028DF630B206210070BA8C /* Products */,
@@ -79,9 +162,11 @@
 		BD028DF630B206210070BA8C /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				C0FFEE000000000000000011 /* FitnessWorkouts.app */,
 				BD028DF530B206210070BA8C /* FitnessWorkouts Watch App.app */,
 				BD028E0230B206240070BA8C /* FitnessWorkouts Watch AppTests.xctest */,
 				BD028E0C30B206240070BA8C /* FitnessWorkouts Watch AppUITests.xctest */,
+				C0FFEE000000000000000002 /* WeeklyMilesWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,11 +181,16 @@
 				BD028DF130B206210070BA8C /* Sources */,
 				BD028DF230B206210070BA8C /* Frameworks */,
 				BD028DF330B206210070BA8C /* Resources */,
+				C0FFEE000000000000000004 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
+			dependencies = (
+				C0FFEE000000000000000006 /* PBXTargetDependency */,
+			);
 			fileSystemSynchronizedGroups = (
 				BD028DF730B206210070BA8C /* FitnessWorkouts Watch App */,
+				C0FFEE000000000000000008 /* Shared */,
 			);
 			name = "FitnessWorkouts Watch App";
 			productName = "FitnessWorkouts Watch App";
@@ -149,6 +239,48 @@
 			productReference = BD028E0C30B206240070BA8C /* FitnessWorkouts Watch AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		C0FFEE000000000000000001 /* WeeklyMilesWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0FFEE00000000000000000D /* Build configuration list for PBXNativeTarget "WeeklyMilesWidgetExtension" */;
+			buildPhases = (
+				C0FFEE00000000000000000A /* Sources */,
+				C0FFEE00000000000000000B /* Frameworks */,
+				C0FFEE00000000000000000C /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				C0FFEE000000000000000007 /* WeeklyMilesWidget */,
+				C0FFEE000000000000000008 /* Shared */,
+			);
+			name = WeeklyMilesWidgetExtension;
+			productName = WeeklyMilesWidgetExtension;
+			productReference = C0FFEE000000000000000002 /* WeeklyMilesWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C0FFEE000000000000000010 /* FitnessWorkouts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0FFEE000000000000000016 /* Build configuration list for PBXNativeTarget "FitnessWorkouts" */;
+			buildPhases = (
+				C0FFEE000000000000000021 /* Sources */,
+				C0FFEE000000000000000022 /* Frameworks */,
+				C0FFEE000000000000000023 /* Resources */,
+				C0FFEE000000000000000013 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0FFEE000000000000000015 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C0FFEE000000000000000008 /* Shared */,
+				C0FFEE000000000000000020 /* FitnessWorkouts iOS */,
+			);
+			name = FitnessWorkouts;
+			productName = FitnessWorkouts;
+			productReference = C0FFEE000000000000000011 /* FitnessWorkouts.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -170,6 +302,12 @@
 						CreatedOnToolsVersion = 27.0;
 						TestTargetID = BD028DF430B206210070BA8C;
 					};
+					C0FFEE000000000000000001 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					C0FFEE000000000000000010 = {
+						CreatedOnToolsVersion = 27.0;
+					};
 				};
 			};
 			buildConfigurationList = BD028DF030B206210070BA8C /* Build configuration list for PBXProject "FitnessWorkouts" */;
@@ -186,9 +324,11 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				C0FFEE000000000000000010 /* FitnessWorkouts */,
 				BD028DF430B206210070BA8C /* FitnessWorkouts Watch App */,
 				BD028E0130B206240070BA8C /* FitnessWorkouts Watch AppTests */,
 				BD028E0B30B206240070BA8C /* FitnessWorkouts Watch AppUITests */,
+				C0FFEE000000000000000001 /* WeeklyMilesWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +345,16 @@
 			);
 		};
 		BD028E0A30B206240070BA8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		C0FFEE00000000000000000C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		C0FFEE000000000000000023 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
 			);
@@ -227,6 +377,16 @@
 			files = (
 			);
 		};
+		C0FFEE00000000000000000A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		C0FFEE000000000000000021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -239,6 +399,16 @@
 			isa = PBXTargetDependency;
 			target = BD028DF430B206210070BA8C /* FitnessWorkouts Watch App */;
 			targetProxy = BD028E0D30B206240070BA8C /* PBXContainerItemProxy */;
+		};
+		C0FFEE000000000000000006 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0FFEE000000000000000001 /* WeeklyMilesWidgetExtension */;
+			targetProxy = C0FFEE000000000000000005 /* PBXContainerItemProxy */;
+		};
+		C0FFEE000000000000000015 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD028DF430B206210070BA8C /* FitnessWorkouts Watch App */;
+			targetProxy = C0FFEE000000000000000014 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -364,20 +534,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "FitnessWorkouts Watch App/FitnessWorkouts Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = PRMVGK4RXQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = FitnessWorkouts;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "FitnessWorkouts reads your running workouts to total your weekly miles and chart your progress.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "FitnessWorkouts only reads your running workouts and does not write any data to Health.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				INFOPLIST_KEY_WKApplication = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.antelopesoft.FitnessWorkouts;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antelopesoft.FitnessWorkouts.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -397,20 +574,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "FitnessWorkouts Watch App/FitnessWorkouts Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = PRMVGK4RXQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = FitnessWorkouts;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "FitnessWorkouts reads your running workouts to total your weekly miles and chart your progress.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "FitnessWorkouts only reads your running workouts and does not write any data to Health.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				INFOPLIST_KEY_WKApplication = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.antelopesoft.FitnessWorkouts;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antelopesoft.FitnessWorkouts.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -431,7 +615,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = PRMVGK4RXQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -454,7 +638,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = PRMVGK4RXQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -477,7 +661,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = PRMVGK4RXQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -499,7 +683,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = PRMVGK4RXQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -515,6 +699,150 @@
 				TEST_TARGET_NAME = "FitnessWorkouts Watch App";
 				VALIDATE_PRODUCT = YES;
 				WATCHOS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
+		C0FFEE00000000000000000E /* Debug configuration for PBXNativeTarget "WeeklyMilesWidgetExtension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WeeklyMilesWidget/WeeklyMilesWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_TEAM = PRMVGK4RXQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeeklyMilesWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Weekly Miles";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Weekly Miles reads your running workouts to show this week's mileage on your watch face.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "FitnessWorkouts only reads your running workouts and does not write any data to Health.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antelopesoft.FitnessWorkouts.watchkitapp.WeeklyMilesWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		C0FFEE00000000000000000F /* Release configuration for PBXNativeTarget "WeeklyMilesWidgetExtension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WeeklyMilesWidget/WeeklyMilesWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_TEAM = PRMVGK4RXQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeeklyMilesWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Weekly Miles";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Weekly Miles reads your running workouts to show this week's mileage on your watch face.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "FitnessWorkouts only reads your running workouts and does not write any data to Health.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antelopesoft.FitnessWorkouts.watchkitapp.WeeklyMilesWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
+		C0FFEE000000000000000017 /* Debug configuration for PBXNativeTarget "FitnessWorkouts" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "FitnessWorkouts iOS/FitnessWorkouts iOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_TEAM = PRMVGK4RXQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FitnessWorkouts;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "FitnessWorkouts reads your running workouts to total your weekly miles and send them to your Apple Watch.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "FitnessWorkouts only reads your running workouts and does not write any data to Health.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antelopesoft.FitnessWorkouts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C0FFEE000000000000000018 /* Release configuration for PBXNativeTarget "FitnessWorkouts" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "FitnessWorkouts iOS/FitnessWorkouts iOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 12;
+				DEVELOPMENT_TEAM = PRMVGK4RXQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FitnessWorkouts;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "FitnessWorkouts reads your running workouts to total your weekly miles and send them to your Apple Watch.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "FitnessWorkouts only reads your running workouts and does not write any data to Health.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antelopesoft.FitnessWorkouts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -550,6 +878,22 @@
 			buildConfigurations = (
 				BD028E1B30B206240070BA8C /* Debug configuration for PBXNativeTarget "FitnessWorkouts Watch AppUITests" */,
 				BD028E1C30B206240070BA8C /* Release configuration for PBXNativeTarget "FitnessWorkouts Watch AppUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		C0FFEE00000000000000000D /* Build configuration list for PBXNativeTarget "WeeklyMilesWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0FFEE00000000000000000E /* Debug configuration for PBXNativeTarget "WeeklyMilesWidgetExtension" */,
+				C0FFEE00000000000000000F /* Release configuration for PBXNativeTarget "WeeklyMilesWidgetExtension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		C0FFEE000000000000000016 /* Build configuration list for PBXNativeTarget "FitnessWorkouts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0FFEE000000000000000017 /* Debug configuration for PBXNativeTarget "FitnessWorkouts" */,
+				C0FFEE000000000000000018 /* Release configuration for PBXNativeTarget "FitnessWorkouts" */,
 			);
 			defaultConfigurationName = Release;
 		};
